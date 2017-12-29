@@ -4,7 +4,7 @@
 
 export default class API {
   constructor() {
-    this.host = 'http://glacial-fjord-12809.herokuapp.com'
+    this.host = 'https://glacial-fjord-12809.herokuapp.com'
   }
 
   fetchTimeSeriesData() {
