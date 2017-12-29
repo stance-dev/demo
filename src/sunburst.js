@@ -2,6 +2,7 @@
  *
  */
 import React, { Component } from 'react';
+import * as d3 from 'd3'
 
 export default class Sunburst extends Component {
 
@@ -132,11 +133,11 @@ export default class Sunburst extends Component {
         .attr("id", "container")
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-    var partition = d3.layout.partition()
+    var partition = d3.partition()
         .size([2 * Math.PI, radius * radius])
         .value(function(d) { return d.size; });
 
-    var arc = d3.svg.arc()
+    var arc = d3.arc()
         .startAngle(function(d) { return d.x; })
         .endAngle(function(d) { return d.x + d.dx; })
         .innerRadius(function(d) { return Math.sqrt(d.y); })

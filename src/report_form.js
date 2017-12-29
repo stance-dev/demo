@@ -2,6 +2,7 @@
  *
  */
 import React, { Component } from 'react';
+import API from './api'
 
 export default class ReportForm extends Component {
   constructor(props) {

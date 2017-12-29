@@ -1,14 +1,14 @@
 import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
-import Sunburst from './js/sunburst';
-import TimeSeriesViz from './js/time_series_viz';
-import TimeSeriesStackedViz from './js/time_series_stacked_viz';
+//import Sunburst from './sunburst';
+import TimeSeriesViz from './time_series_viz';
+import TimeSeriesStackedViz from './time_series_stacked_viz';
 import API from './api'
-import QuickLook from './js/quick_look';
-import ReportForm from './js/report_form';
-import Sidebar from './js/sidebar';
-import GenderBarChart from './js/gender_bar_chart.js';
-import Widget from './js/widget';
+import QuickLook from './quick_look';
+import ReportForm from './report_form';
+import Sidebar from './sidebar';
+import GenderBarChart from './gender_bar_chart.js';
+import Widget from './widget';
 import './App.css';
 
 export default class App extends Component {
@@ -130,11 +130,13 @@ export default class App extends Component {
                   </Widget>
                 </div>
 
+               {/* 
                 {sunburstData && <div className='cf mb8'>
-                  <Widget width={1}>
-                    <Sunburst data={sunburstData} />
-                  </Widget>
+                   <Widget width={1}>
+                     <Sunburst data={sunburstData} />
+                   </Widget>
                 </div>}
+                */}
 
                 <div className='cf mb8'>
                   <Widget>
